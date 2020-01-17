@@ -3,16 +3,16 @@ function text(content)
     SetTextProportional(0)
     SetTextScale(1.1,1.1)
     SetTextEntry("STRING")
-    AddTextComponentString("TEMP: " .. content .. "°C")
-    DrawText(0.01,0.645)
+    AddTextComponentString("RPM: " .. content)
+    DrawText(0.01,0.6)
 end
 Citizen.CreateThread(function()
 
     while true do
         Citizen.Wait(1)
-        local temp = (GetVehicleEngineTemperature(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
+        local rpm = (GetVehicleCurrentRpm(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
         if(IsPedInAnyVehicle(GetPlayerPed(-1), false)) then
-            text(math.floor(temp))
+            text(math.floor(rpm))
         end
     end
 end)

@@ -1,4 +1,4 @@
-function text(content) 
+function text(content)
     SetTextFont(4)
     SetTextProportional(0)
     SetTextScale(1.1,1.1)
@@ -14,7 +14,6 @@ Citizen.CreateThread(function()
         if gear == 0 then
             gear = "R"
         end
-        -- Condition to check if the ped is in a vehicle
         if(IsPedInAnyVehicle(GetPlayerPed(-1), false)) then
             text(gear)
         end
