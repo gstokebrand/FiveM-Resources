@@ -12,7 +12,7 @@ Citizen.CreateThread(function()
         Citizen.Wait(1)
         local rpm = (GetVehicleCurrentRpm(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
         if(IsPedInAnyVehicle(GetPlayerPed(-1), false)) then
-            text(math.floor(rpm))
+            text(rpm)
         end
     end
 end)
