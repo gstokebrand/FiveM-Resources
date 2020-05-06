@@ -1,3 +1,9 @@
+--
+-- Credit to Jeva for providing most of this script (https://www.youtube.com/channel/UCI7x329xu2rLbtVvFPVIhiQ)
+-- https://github.com/gstokebrand/FiveM-Resources
+-- GPL-3.0
+--
+
 -- 3d vector (airport) <x,y,z>
 local v1 = vector3(-1377.514282266, -2852.64941406, 13.9448)
 -- 2d vector (airport) <x,y>

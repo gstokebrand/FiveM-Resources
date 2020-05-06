@@ -8,9 +8,11 @@ Iam a new programmer with next to no experience in Lua, thus my code will probab
 * ui-rpm - RPM counter (tachometer)      
 * ui-gear - Gear indicator                
 * ui-speed - Speedometer (mp/h or km/h)    
-* ui-temp - Engine temperature indicator  
+* ui-temp - Engine temperature indicator (F or C)  
 * ui-rot - Vehicle heading direction (e.g. **N** or **SE**)  
+
 
 **Currently included experimental resources:**  
 These resources are currently only being used for testing and do not provide any gameplay purpose.
 * map-blips - Static map blips
+* ui-fuel - Indicates fuel in ? unit
