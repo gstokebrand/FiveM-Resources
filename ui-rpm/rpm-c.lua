@@ -38,7 +38,7 @@ end
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(1)
+        Citizen.Wait(5)
         local rpm = math.floor(100 * (GetVehicleCurrentRpm(GetVehiclePedIsIn(GetPlayerPed(-1), false))))
         if rpm >= rpmcolor then
            rpm = "~" .. color .. "~" .. rpm .. "%"

@@ -14,7 +14,7 @@ function text(content)
 end
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(1)
+        Citizen.Wait(5)
         local fuel = (GetVehicleFuelLevel(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
         if(IsPedInAnyVehicle(GetPlayerPed(-1), false)) then
             text(fuel)

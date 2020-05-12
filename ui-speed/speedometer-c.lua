@@ -47,7 +47,7 @@ end)
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(1)
+        Citizen.Wait(5)
         if kmh == true then
             speed = math.floor((GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false)) * 3.6))
             unit = "km/h"

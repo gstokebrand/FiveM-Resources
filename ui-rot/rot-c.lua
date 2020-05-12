@@ -15,7 +15,7 @@ end
 Citizen.CreateThread(function()
 
     while true do
-        Citizen.Wait(1)
+        Citizen.Wait(5)
         local rot = (GetEntityHeading(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
         --If statement to check what direction the car is facing
         if 22.5 < rot and rot < 67.5 then

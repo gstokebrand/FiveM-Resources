@@ -47,7 +47,7 @@ end)
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(1)
+        Citizen.Wait(5)
         if celsius == true then
             temp = math.floor((GetVehicleEngineTemperature(GetVehiclePedIsIn(GetPlayerPed(-1), false))))
             unit = "°C"

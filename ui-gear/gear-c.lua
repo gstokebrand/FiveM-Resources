@@ -15,7 +15,7 @@ end
 Citizen.CreateThread(function()
 
     while true do
-        Citizen.Wait(1)
+        Citizen.Wait(5)
         local gear = (GetVehicleCurrentGear(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
         if gear == 0 then
             gear = "R"
